@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+/* CSS Reset */
+/* unviversal selector  */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  color: hsl(11, 13%, 17%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+a,
+p,
+label,
+span,
+input {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* change color for hover */
+a:hover {
+  color: #c7a17a;
+}
+
+/* Header Area */
+.nav {
+  /* border: 2px solid red; */
+  overflow: auto;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nav h1 {
+  /* border:2px solid blue; */
+  width: 50%;
+  float: left;
+}
+.nav a {
+  font-family: "Oswald", sans-serif;
+  color: hsl(11, 13%, 17%);
+  text-decoration: none;
+}
+
+.nav ul {
+  /* border: 2px solid green; */
+  width: 50%;
+  float: left;
+  text-align: right;
+  padding-top: 10px;
+}
+.nav li {
+  display: inline-block;
+  /* border:2px solid yellow; */
+}
+
+/* Banner Area */
+
+.banner {
+  /* border: 2px solid red; */
+  height: 650px;
+  background-image: url("../images/atf-image.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5%;
+}
+
+.banner-text {
+  /* border:2px solid blue; */
+  width: 30%;
+  position: relative;
+  left: 7.5%;
+  top: 20%;
+}
+
+.banner h2 {
+  /* border:2px solid orange; */
+  text-transform: uppercase;
+  font-size: 75px;
+  line-height: 75px;
+}
+
+.banner p {
+  /* border:2px solid green; */
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.banner a {
+  /* border: 2px solid black; */
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px 20px;
+  background-color: #312a26;
+  display: inline-block;
+}
+
+.banner span {
+  color: #4caf50;
+  font-family: "Oswald", sans-serif;
+}
+
+/* *Ads-area1 */
+
+.ads {
+  /* border: 2px solid red; */
+  overflow: auto;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5%;
+}
+
+.ads-box {
+  width: 49.5%;
+  float: left;
+  height: 350px;
+  position: relative;
+}
+
+.ads .ads-box:nth-child(1),
+.ads .ads-box:nth-child(2) {
+  background-size: cover;
+  background-position: center;
+}
+
+.ads1 .ads-box:nth-child(1) {
+  background-image: url("../images/merchandise1.jpg");
+}
+
+.ads1 .ads-box:nth-child(2) {
+  background-image: url("../images/merchandise2.jpg");
+}
+
+.ads .ads-box:nth-child(1),
+.ads .ads-box:nth-child(3) {
+  margin-right: 1%;
+}
+
+.ads2 .ads-box:nth-child(1),
+.ads2 .ads-box:nth-child(2) {
+  margin-bottom: 1%;
+}
+
+/* ads2 do it again*/
+
+.ads2 .ads-box:nth-child(1) {
+  background-image: url("../images/merchandise3.jpg");
+}
+.ads2 .ads-box:nth-child(2) {
+  background-image: url("../images/merchandise4.jpg");
+}
+
+.ads2 .ads-box:nth-child(3) {
+  background-image: url("../images/merchandise5.jpg");
+}
+
+.ads2 .ads-box:nth-child(4) {
+  background-image: url("../images/merchandise6.jpg");
+}
+
+/* another way of adding background image */
+
+/* .ads-item1 {
+  background-image: url("../imagesmerchandise1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.ads-item2 {
+  background-image: url("../imagesmerchandise2.jpg");
+  background-size: cover;
+  background-position: center;
+} */
+
+.ads-text {
+  /* border: 2px solid green; */
+  width: 30%;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+}
+
+.ads-text h3 {
+  /* border: 2px solid orange; */
+  color: #ffffff;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 35px;
+}
+
+.ads-text a {
+  /* border: 2px solid black; */
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Merchandise Area  */
+
+.merch {
+  /* border: 2px solid red; */
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+.div-title {
+  /* border: 2px solid green; */
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.div-title span {
+  /* border: 2px solid blue; */
+  color: #c7a17a;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.div-title h2 {
+  /* border: 2px solid orange; */
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #312a26;
+  margin-bottom: 20px;
+}
+
+.div-title hr {
+  background-color: #c7a17a;
+  width: 10%;
+  height: 4px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.merch-gallery {
+  /* border: 2px solid purple; */
+  overflow: auto;
+}
+
+.merch-item {
+  /* border: 2px solid black; */
+  width: 24.25%;
+  float: left;
+  margin-right: 1%;
+}
+
+.merch-item:nth-child(4),
+.merch-item:nth-child(8) {
+  margin-right: 0;
+}
+
+.merch-item:nth-child(4),
+.merch-item:nth-child(2),
+.merch-item:nth-child(3),
+.merch-item:nth-child(4) {
+  margin-bottom: 1%;
+}
+
+.merch-item img {
+  /* border: 2px solid orchid; */
+  width: 100%;
+}
+
+.merch-item h3 {
+  /* border: 2px solid lightgreen; */
+  color: #312a26;
+}
+
+.merch-item span {
+  /* border: 2px solid red; */
+  color: #c7a17a;
+}
+
+.merch-item p {
+  /* border: 2px solid yellow; */
+  color: #c7a17a;
+}
+
+/* Ads-Big Area */
+.ads-big {
+  /* border: 2px solid red; */
+  height: 400px;
+  background-image: url("../images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.ads-big-text {
+  /* border: 2px solid blue; */
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.ads-big-text span {
+  color: #c7a17a;
+  font-style: italic;
+  font-size: 25px;
+}
+
+.ads-big-text h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.ads-big-text a {
+  color: #312a26;
+  background-color: #ffffff;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+/* Reservation Form  check again*/
+
+.reservation {
+  /* border: 2px solid red; */
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: auto;
+}
+.res-form {
+  /* border: 2px solid blue; */
+  overflow: auto;
+}
+
+.res-form-left {
+  /* border: 2px solid blue; */
+  margin-right: 1%;
+}
+
+.res-form-left,
+.res-form-right {
+  /* border: 2px solid green; */
+  width: 49.5%;
+  float: left;
+  background-color: #f2f2f2;
+  padding: 2%;
+  border-radius: 5px;
+}
+
+.res-form label,
+.res-form input,
+.res-form textarea,
+.res-form select {
+  display: block;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.res-form label {
+  font-weight: 700;
+}
+
+.res-form input,
+.res-form textarea,
+.res-form select {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input.form-inline,
+label.form-inline {
+  display: inline;
+  width: auto;
+}
+.subtitle {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* .Another way of designing the bth
+btn{
+  background-color:#4caf50 ;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff
+} */
+
+input.btn {
+  background-color: #4caf50;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Footer Area 1 */
+
+.footer {
+  /* border: 2px solid red; */
+  background-image: url("../images/footer-img.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.footer-content {
+  border: 2px blue;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: auto;
+}
+
+.footer-content > div {
+  width: 24.25%;
+  float: left;
+  margin-right: 1%;
+}
+
+.footer-content > div:nth-child(4) {
+  margin-right: 0;
+}
+
+.footer-content h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer-content th,
+.footer-content td {
+  color: #ffffff;
+  font-family: "Open Sans" san-serif;
+}
+
+.latest-post h4 {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.latest-post p {
+  color: #c7a17a;
+}
+
+.opening {
+  border: 2 px green;
+}
+
+.latest-post {
+  /* border: 2px solid purple; */
+}
+
+.contact {
+  /* border: 2px solid yellow; */
+}
+
+.contact p {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.contact .highlight {
+  color: #c7a17a;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.contact input {
+  color: #312a26;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.contact input[type="submit"] {
+  background-color: #c7a17a;
+  color: #312a26;
+}
+
+.title2 {
+  margin-top: 15px;
+}
+
+.location h4 {
+  color: #c7a17a;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.location p {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.location {
+  /* border: 2px solid coral; */
+}
+
+/* Footer2  */
+
+.footer2 {
+  /* border: 2px solid red; */
+  background-color: #000000;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.footer2 .logo {
+  /* border: 2px solid blue; */
+}
+
+.footer2 li {
+  display: inline-block;
+}
+
+.footer-content .social {
+  /* border: 2px solid green; */
+  width: 49.5%;
+  text-align: center;
+}
+
+.footer2 .copyright {
+  /* border: 2px solid blueviolet; */
+  margin-right: 0;
+}
+
+.footer2 h2,
+.footer2 p,
+.footer2 a {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  /* if your screen size is lowerr than 768px, it will apply this css below */
+
+  .ads-box {
+    width: 100%;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .merch-item {
+    width: 100%;
+  }
+
+  .footer-content > div {
+    width: 100%;
+  }
+}
